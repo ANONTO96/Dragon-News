@@ -1,7 +1,9 @@
+import { Outlet } from "react-router-dom";
 import Header from "../components/Header";
 import LatestNews from "../components/LatestNews";
 import LeftNavbar from "../components/LeftNavbar";
 import Navbar from "../components/Navbar";
+import RightNavbar from "../components/RightNavbar";
 
 const Home = () => {
     return (
@@ -16,9 +18,9 @@ const Home = () => {
             <Navbar></Navbar>
             </nav>
             <main className="w-[90%] lg:w-[80%] mx-auto my-5 grid md:grid-cols-12">
-            <aside className="left col-span-3"><LeftNavbar></LeftNavbar></aside>
-            <section className="col-span-6">Dragon News Home</section>
-            <aside className="right col-span-3">Login With</aside>
+            <aside className="left col-span-3 pr-2"><LeftNavbar></LeftNavbar></aside>
+            <section className="col-span-6"><Outlet></Outlet></section>
+            <aside className="right col-span-3 pl-2"><RightNavbar></RightNavbar></aside>
             </main>
         </div>
     );
