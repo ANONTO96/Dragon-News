@@ -17,10 +17,10 @@ const Home = () => {
             <nav className="w-[90%] lg:w-[80%] mx-auto">
             <Navbar></Navbar>
             </nav>
-            <main className="w-[90%] lg:w-[80%] mx-auto my-5 grid md:grid-cols-12">
-            <aside className="left col-span-3 pr-2"><LeftNavbar></LeftNavbar></aside>
+            <main className="w-[90%] lg:w-[80%] mx-auto my-5 md:grid md:grid-cols-12">
+            <aside className="left md:col-span-3 md:pr-2"><LeftNavbar></LeftNavbar></aside>
             <section className="col-span-6"><Outlet></Outlet></section>
-            <aside className="right col-span-3 pl-2"><RightNavbar></RightNavbar></aside>
+            <aside className="right md:col-span-3 md:pl-2"><RightNavbar></RightNavbar></aside>
             </main>
         </div>
     );

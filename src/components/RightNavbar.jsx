@@ -1,5 +1,5 @@
 
-import FindUs from "./Findus";
+import FindUs from "./FindUs";
 import SocialLogin from "./SocialLogin";
 import swimming from '../assets/swimming.png';
 import classroom from '../assets/class.png'; 

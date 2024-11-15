@@ -5,7 +5,7 @@ import twitterIcon from '../assets/twitter.png'
 const FindUs = () => {
     return (
         <div>
-            <h2 className="mb-3 font-semibold">Find Us On</h2>
+            <h2 className="mb-3 font-semibold">Find Us On :</h2>
             <div className="join join-vertical flex bg-base-200">
                 <button className="btn justify-start join-item border border-gray-300"><img src={fbIcon} alt="" />Facebook</button>
                 <button className="btn justify-start join-item border border-gray-300"><img src={instaIcon} alt="" />Instagram</button>
