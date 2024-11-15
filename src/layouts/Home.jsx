@@ -19,7 +19,7 @@ const Home = () => {
             </nav>
             <main className="w-[90%] lg:w-[80%] mx-auto my-5 md:grid md:grid-cols-12">
             <aside className="left md:col-span-3 md:pr-2"><LeftNavbar></LeftNavbar></aside>
-            <section className="col-span-6"><Outlet></Outlet></section>
+            <section className="col-span-6 lg:px-10"><Outlet></Outlet></section>
             <aside className="right md:col-span-3 md:pl-2"><RightNavbar></RightNavbar></aside>
             </main>
         </div>

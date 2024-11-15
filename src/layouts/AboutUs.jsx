@@ -1,19 +1,33 @@
 import moment from 'moment';
 import logo from '../assets/logo.png';
+import userIcon from '../assets/user.png';
+import { Link } from 'react-router-dom';
 
 const AboutUs = () => {
     return (
-        <div>
+        <div className="font-Poppins">
             <div>
-                <div className='flex flex-col justify-center items-center mb-12 mt-32'>
+                <div className='flex flex-col justify-center items-center my-12'>
                     <img className='w-96' src={logo} alt="logo" />
                     <p className='text-gray-500'>Journalism Without Fear or Favour</p>
                     <p className='text-gray-500'>{moment().format("dddd, MMMM Do YYYY")}</p>
                 </div>
             </div>
 
-            <div className='flex justify-center mb-7'>
-                <div className="stats shadow">
+            <div className="flex justify-between items-center my-10">
+            <div className='space-x-7 text-gray-600 font-semibold'>
+                <Link to={'/'}>Home</Link>
+                <Link to={'/carrier'}>Carrier</Link>
+                <Link to={'/about'}>About</Link>
+            </div>
+            <div className='flex gap-2 items-center'>
+                <img className='w-9 h-9' src={userIcon} alt="icon" />
+                <Link to='/auth/login' className='btn btn-neutral rounded-none'>Log In</Link>
+            </div>
+        </div>
+
+            <div className='flex justify-center mb-5'>
+                <div className="md:stats shadow-lg flex flex-col">
                     <div className="stat">
                         <div className="stat-figure text-primary">
                             <svg
@@ -68,7 +82,7 @@ const AboutUs = () => {
             </div>
 
             <div className='flex justify-center mb-32'>
-                <div className="stats shadow">
+                <div className="md:stats shadow-lg flex flex-col">
                     <div className="stat">
                         <div className="stat-figure text-secondary">
                             <svg
@@ -127,6 +141,7 @@ const AboutUs = () => {
                     </div>
                 </div>
             </div>
+
 
             <footer className="footer footer-center bg-gray-700 text-base-100 p-10">
   <aside>

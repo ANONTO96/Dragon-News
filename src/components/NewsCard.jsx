@@ -10,8 +10,7 @@ const NewsCard = ({ news }) => {
         total_view
     } = news;
     return (
-        <div>
-            <div className="p-4 rounded-lg shadow-lg bg-white lg:px-10">
+            <div className="p-4 rounded-xl shadow-xl bg-white lg:px-10 border border-gray-300 mb-3">
                 {/* Author and Date */}
                 <div className="flex items-center justify-between space-x-4">
                     <div className='flex gap-3'>
@@ -38,7 +37,7 @@ const NewsCard = ({ news }) => {
                 <img
                     src={thumbnail_url}
                     alt="thumbnail"
-                    className="w-full h-80 lg:h-[400px] object-cover mt-3"
+                    className="w-full h-[370px] sm:h-[450px] lg:h-[550px] rounded-2xl mt-3"
                 />
 
                 {/* Details */}
@@ -58,7 +57,6 @@ const NewsCard = ({ news }) => {
                     </div>
                 </div>
             </div>
-        </div>
     );
 };
 
